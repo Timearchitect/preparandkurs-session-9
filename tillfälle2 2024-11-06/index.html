@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+       
+    </head>
+    <body>
+        <input id="namnInput" type="text"> 
+        <input type="number"> 
+<input type="checkbox" name="" id="">
+    </body>
+    <script>
+        //2) datatyper
+
+        let x;
+        // gröna number
+        x = 5;
+        x = 0.1;
+
+        // röda/orange Strings
+        x = "@";
+        x = `text 
+    dfsfsv sdfsdf fdsf`; //flera rader backtick
+        x = "text  dfsdfsdfs";
+
+        // mörkblå är boolean
+        x = true; //  true -> 1 , false -> 0
+
+        // undefined
+        x = undefined;
+
+        // object
+        x = ["alrik", 32]; // array som är object också
+        x = { name: "alrik", age: 32 }; //object
+
+        //Symbol
+        //bigInt
+        //NULL
+
+        //typeof 5 // visa vilken datatyp höger om den -> "number"
+
+        console.clear(); //rensar dispayad info i konsolen
+
+        new Date().toDateString();
+
+        //Concatinate / konkatinera
+        //"hej" + "san" -> "hejsan"
+        //"hej" + 1   ->  "hej1"
+        //"hej" + true  -> "hejtrue"
+        //"hej" + undefined -> "hejundefined"
+        //"hej" + null -> "hejnull"
+
+        // 1 + "hej" -> "1hej"
+        // 1 + 1 -> 2
+        // 1 + true -> 2
+        // 1 + undefined -> NaN (number)
+        // 1 + null -> 1
+        false === false;  // -> true
+        5 === 5;          // -> true
+        true === true;    // -> true
+        1 === true;       // -> false
+        3 === true;       // -> false?
+        2 / 2 === 2 / 2;  // -> true
+        2 * 2 === 2 + 2;  // -> false?
+        1 + 1 === 2;      // -> false?
+
+        // 2) ifsatser
+        let age = 10
+        if (age >= 18) {
+            console.log("Du är vuxen!! du får komma in")
+            console.log("Du är vuxen!! du får komma in")
+            console.log("Du är vuxen!! du får komma in")
+        } else // optional
+        console.log(" du får ej komma in, tyvärr")
+        
+
+        let name = document.getElementById("namnInput").value
+        if( name === "Alrik")
+           alert("ALRIK är Här !!")
+
+        console.warn("vidare..");
+
+        /* 
+            foo= 5
+            bar= 2
+            result = foo/bar
+
+            if(isNaN(result) || !isFinite(result))
+                console.log("cant be divided!!")
+            else
+                console.log("CAN be divided") 
+        */
+
+        let foo = 5;
+
+        // if satser
+        // condition
+        1 + 1 == 2; // jämnför
+        1 === 1; // jämnför
+        1 < 2;
+        2 > 1;
+        1 <= 3;
+        1 >= 1;
+        1 != 1;
+        
+
+
+function multipy(tal1 , tal2) {
+    return tal1 * tal2
+}
+
+
+
+    </script>
+</html>

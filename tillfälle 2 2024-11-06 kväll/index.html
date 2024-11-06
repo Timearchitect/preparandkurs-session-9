@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        age: <input id="numberInput" type="number" />
+
+        <h1>ALRIK TILLFÄLLE2</h1>
+        <h1>kundservice enkät</h1>
+        <form action="">
+            <input name="group" type="radio" />
+            <input name="group" type="radio" />
+            <input name="group" type="radio" />
+            <br />
+            <input id="check1" type="checkbox" />
+            <input type="checkbox" />
+            <input type="checkbox" />
+            <br />
+            <input type="button" value="skicka" />
+        </form>
+        <button
+            onclick='
+          let age = document.getElementById("numberInput").valueAsNumber
+            if( age >= 20 ){ // systembolagets åldersgräns är 20
+                alert("du får kolla in alkoholen!")
+                window.location.href="https://www.systembolaget.se/"
+            }
+            else{ 
+               alert("du är ett barn,tyvärr")
+            }
+         '  
+        >
+            gå in till systemet
+        </button>
+    </body>
+</html>
