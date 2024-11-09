@@ -1,4 +1,4 @@
-/*  ta data från html taggar/element
+/*/*  ta data från html taggar/element
    console.log(document.getElementById("check1"))
    console.log(document.body.childNodes[5][4])
  */
@@ -67,3 +67,88 @@
     console.log("NO!!!")
     console.log("du är ett barn")
   }
+
+  // 4) array rad med behållare i ordning
+
+let y = 5
+y = 10
+
+// index           0         1        2
+let array = [ "Mikaela" , "Björn"  ,"Marta" ]
+array[3] = "Anna"
+
+array.push("ALRIK") //lägger in på
+array.shift()
+array.pop()
+array.sort()
+
+
+console.log(array.length) //visar antal element i arrayen
+console.log(array);
+
+
+
+ // 5) loopar
+
+if(false){
+  console.log("yes");
+}else{
+  console.log("NO");
+}
+
+
+  let count = 11
+  while ( count > 0) {
+    count = count - 1
+    console.log("while loop: " + count)
+  } 
+
+ let i = 0
+ while (i < array.length) {
+   document.body.innerHTML += "<br>"+ array[i] 
+   i = i + 1
+   i +=  1
+ } 
+
+
+  
+
+
+
+let player= {
+    namn: 'Benny',
+    age: 32,
+
+    play: function (  ) {
+        console.log('GO')
+    },
+
+}
+
+ player.play()
+ console.log( "Tjenare" )
+ array.pop()
+ alert()
+ Math.random()
+ document.getElementById( "box" )
+
+
+
+
+
+
+
+console.log("vidare...")
+
+function add( tal1 , tal2) {
+  return tal1 + tal2
+}
+
+
+add( 2, "hej" )   // "hej2"
+add( 2 , 1 )      //    3
+
+add( "hej2" , 3 ) //"hej23"
+
+
+x = add( "hej2" , 3 ) 
